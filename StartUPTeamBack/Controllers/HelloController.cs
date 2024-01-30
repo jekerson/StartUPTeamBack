@@ -8,10 +8,9 @@ namespace StartUPTeamBack.Controllers
     public class HelloController : ControllerBase
     {
         [HttpGet]
-        [HttpGet]
         public IActionResult Get()
         {
-            return Ok("Hello, StartUP Team!");
+            return new OkObjectResult(new {message = "Hello, StartUP Team"});
         }
     }
 }
